@@ -7,9 +7,8 @@ namespace _2016_04_17_test_while_continue
         static void Main(string[] args)
         {
             int sum = 0,num =0;
-            while(true)
+            while(num ++ <=100)
             {
-                num++;
                 if (num == 100) // if num to be 100 continue -> sum +=101 and while end
                 {
                     break;
