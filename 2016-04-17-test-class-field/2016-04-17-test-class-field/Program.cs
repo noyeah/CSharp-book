@@ -27,7 +27,7 @@ namespace _2016_04_17_test_class_field
                 return; // 값의 반환 말고도 점프 구문의 역할도 있다.
             }
 
-            Console.WriteLine(txt);
+            Console.WriteLine(txt); // 이 구문이 실행되기 전에 위에 return 문에 의해 점프되어 이구문은 실행되지 않는다
 
         }
     }
