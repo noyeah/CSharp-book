@@ -4,6 +4,8 @@ namespace _2016_04_22_test_constructor
 {
     class Book
     {
+        static public int Count;
+
         public string Title;
         public decimal ISBN13;
         public string Author;
@@ -15,12 +17,16 @@ namespace _2016_04_22_test_constructor
         public Book(string title)
         {
             Title = title;
+            Count++;
+            Console.WriteLine("객체 사용 횟수 = "+ Count);
         }
 
         public Book(string title, decimal isbn13)
         {
             Title = title;
             ISBN13 = isbn13;
+            Count++;
+            Console.WriteLine("객체 사용 횟수 = " + Count);
         }
 
         public Book(string title, decimal isbn13, string author)
@@ -28,6 +34,8 @@ namespace _2016_04_22_test_constructor
             Title = title;
             ISBN13 = isbn13;
             Author = author;
+            Count++;
+            Console.WriteLine("객체 사용 횟수 = " + Count);
         }
 
         public void Output()
