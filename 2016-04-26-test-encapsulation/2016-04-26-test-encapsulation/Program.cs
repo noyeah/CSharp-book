@@ -4,6 +4,7 @@ namespace _2016_04_26_test_encapsulation
 {
     class Circle
     {
+        static public Circle one = new Circle();
         private double Pi = 3.14;
 
         private double GetArea(double radius)
@@ -22,9 +23,7 @@ namespace _2016_04_26_test_encapsulation
     {
         static void Main(string[] args)
         {
-            Circle one = new Circle();
-
-            one.Print(10);
+            Circle.one.Print(10);
             Console.ReadKey();
         }
     }
